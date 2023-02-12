@@ -1,12 +1,107 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
+    <title>Интернет-магазин "Девайс"</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+  <body>
+    <header class="page-header">
+      <div class="header-container">
+        <a class="navigation-logo">
+          <img class="page-header-logo" src="images/logo-device-black.svg" width="145" height="36" alt="Логотип Device">
+        </a>
+        <nav class="navigation">
+
+          <ul class="navigation-user-list">
+            <li class="navigation-user-item">
+              <form class="navigation-search-form" action="https://echo.htmlacademy.ru/" method="get">
+                <label class="visually-hidden" for="navigation-search">Поиск по сайту</label>
+                <input class="field-search" type="search" name="navigation-search" id="navigation-search"
+                  placeholder="Поиск по сайту" required>
+
+                <button class="button button-search" type="submit">Найти</button>
+              </form>
+
+            </li>
+            <li class="navigation-user-item">
+              <a class="navigation-user-link navigation-login" href="#">Войти</a>
+            </li>
+            <li class="navigation-user-item">
+              <a class="navigation-user-link navigation-compare" href="#">Сравнить</a>
+            </li>
+            <li class="navigation-user-item">
+              <a class="navigation-user-link navigation-basket" href="#">
+                <span class="navigation-basket-amount">2</span>
+                Корзина
+              </a>
+            </li>
+          </ul>
+          <div class="main-menu">
+          <a class="navigation-menu-link navigation-menu-catalog">Каталог товаров</a>
+          <ul class="navigation-menu-list">
+            <!-- <li class="navigation-menu-item">
+
+            </li> -->
+            <li class="navigation-menu-item">
+              <a class="navigation-menu-link navigation-menu-delivery" href="#">Доставка</a>
+            </li>
+            <li class="navigation-menu-item">
+              <a class="navigation-menu-link navigation-menu-guarantee" href="#">Гарантия</a>
+            </li>
+            <li class="navigation-menu-item">
+              <a class="navigation-menu-link navigation-menu-contacts" href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
+          <!-- выпадающее подменю -->
+          <ul class="navigation-submenu-list">
+            <!-- первая колонка -->
+            <li class="navigation-submenu-item">
+              <ul class="navigation-submenu-video-list">
+                <li class="navigation-submenu-video-item">
+                  <a class="navigation-submenu-link" href="#">Виртуальная реальность</a>
+                </li>
+                <li class="navigation-submenu-video-item">
+                  <a class="navigation-submenu-link" href="#">Моноподы для cелфи</a>
+                </li>
+                <li class="navigation-submenu-video-item">
+                  <a class="navigation-submenu-link" href="#">Экшн-камеры</a>
+                </li>
+              </ul>
+            </li>
+            <!-- вторая колонка -->
+            <li class="navigation-submenu-item">
+              <ul class="navigation-submenu-watch-list">
+                <li class="navigation-submenu-watch-item">
+                  <a class="navigation-submenu-link" href="#">Фитнес-браслеты</a>
+                </li>
+                <li class="navigation-submenu-watch-item">
+                  <a class="navigation-submenu-link" href="#">Умные часы</a>
+                </li>
+              </ul>
+            </li>
+            <!-- третья колонка -->
+            <li class="navigation-submenu-item">
+              <ul class="navigation-submenu-device-list">
+                <li class="navigation-submenu-device-item">
+                  <a class="navigation-submenu-link" href="#">Квадрокоптеры</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main-index">
+
+    </main>
+    <footer class="page-footer">
+
+    </footer>
 
   </body>
+
 </html>
