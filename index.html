@@ -8,58 +8,57 @@
   </head>
 
   <body>
-    <header class="page-header">
-      <div class="header-container">
-        <a class="navigation-logo">
-          <img class="page-header-logo" src="images/logo-device-black.svg" width="145" height="36" alt="Логотип Device">
-        </a>
-        <nav class="navigation">
-
-          <ul class="navigation-user-list">
-            <li class="navigation-user-item">
-              <form class="navigation-search-form" action="https://echo.htmlacademy.ru/" method="get">
-                <label class="visually-hidden" for="navigation-search">Поиск по сайту</label>
-                <input class="field-search" type="search" name="navigation-search" id="navigation-search"
+    <div class="wrapper">
+      <header class="page-header">
+        <div class="header-container">
+          <a class="page-header-logo">
+            <img class="page-header-logo-img" src="images/logo-device-black.svg" width="145" height="36"
+              alt="Логотип Device">
+          </a>
+          <nav class="navigation">
+            <div class="user-menu-container">
+              <form class="user-search-form" action="https://echo.htmlacademy.ru/" method="get">
+                <label class="visually-hidden" for="user-search">Поиск по сайту</label>
+                <input class="field-search" type="search" name="user-search" id="user-search"
                   placeholder="Поиск по сайту" required>
 
-                <button class="button button-search" type="submit">Найти</button>
+                <button class="button-search" type="submit">Найти</button>
               </form>
 
-            </li>
-            <li class="navigation-user-item">
-              <a class="navigation-user-link navigation-login" href="#">Войти</a>
-            </li>
-            <li class="navigation-user-item">
-              <a class="navigation-user-link navigation-compare" href="#">Сравнить</a>
-            </li>
-            <li class="navigation-user-item">
-              <a class="navigation-user-link navigation-basket" href="#">
-                <span class="navigation-basket-amount">2</span>
-                Корзина
-              </a>
-            </li>
-          </ul>
-          <div class="main-menu">
-          <a class="navigation-menu-link navigation-menu-catalog">Каталог товаров</a>
-          <ul class="navigation-menu-list">
-            <!-- <li class="navigation-menu-item">
+              <ul class="navigation-user-list">
+                <li class="navigation-user-item navigation-login">
+                  <a class="navigation-user-link user-login" href="#">Коля Петухов</a>
+                  <a class="navigation-user-link user-logout" href="#">Выйти</a>
+                </li>
+                <li class="navigation-user-item">
+                  <a class="navigation-user-link user-compare" href="#">Сравнить</a>
+                </li>
+                <li class="navigation-user-item ">
+                  <a class="navigation-user-link user-basket" href="#">
+                    <span class="user-basket-amount">2</span>
+                    Корзина
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="main-menu-container">
+              <a class="navigation-menu-link navigation-menu-catalog">Каталог товаров</a>
+              <ul class="navigation-menu-list">
+                <li class="navigation-menu-item">
+                  <a class="navigation-menu-link navigation-menu-delivery" href="#">Доставка</a>
+                </li>
+                <li class="navigation-menu-item">
+                  <a class="navigation-menu-link navigation-menu-guarantee" href="#">Гарантия</a>
+                </li>
+                <li class="navigation-menu-item">
+                  <a class="navigation-menu-link navigation-menu-contacts" href="#">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <!-- выпадающее подменю -->
+            <div class="submenu-container">
+              <!-- первая колонка -->
 
-            </li> -->
-            <li class="navigation-menu-item">
-              <a class="navigation-menu-link navigation-menu-delivery" href="#">Доставка</a>
-            </li>
-            <li class="navigation-menu-item">
-              <a class="navigation-menu-link navigation-menu-guarantee" href="#">Гарантия</a>
-            </li>
-            <li class="navigation-menu-item">
-              <a class="navigation-menu-link navigation-menu-contacts" href="#">Контакты</a>
-            </li>
-          </ul>
-        </div>
-          <!-- выпадающее подменю -->
-          <ul class="navigation-submenu-list">
-            <!-- первая колонка -->
-            <li class="navigation-submenu-item">
               <ul class="navigation-submenu-video-list">
                 <li class="navigation-submenu-video-item">
                   <a class="navigation-submenu-link" href="#">Виртуальная реальность</a>
@@ -71,9 +70,9 @@
                   <a class="navigation-submenu-link" href="#">Экшн-камеры</a>
                 </li>
               </ul>
-            </li>
-            <!-- вторая колонка -->
-            <li class="navigation-submenu-item">
+
+              <!-- вторая колонка -->
+
               <ul class="navigation-submenu-watch-list">
                 <li class="navigation-submenu-watch-item">
                   <a class="navigation-submenu-link" href="#">Фитнес-браслеты</a>
@@ -82,26 +81,26 @@
                   <a class="navigation-submenu-link" href="#">Умные часы</a>
                 </li>
               </ul>
-            </li>
-            <!-- третья колонка -->
-            <li class="navigation-submenu-item">
+
+              <!-- третья колонка -->
+
               <ul class="navigation-submenu-device-list">
                 <li class="navigation-submenu-device-item">
                   <a class="navigation-submenu-link" href="#">Квадрокоптеры</a>
                 </li>
               </ul>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <main class="main-index">
 
-    </main>
-    <footer class="page-footer">
+            </div>
+          </nav>
+        </div>
+      </header>
+      <main class="main-index">
 
-    </footer>
+      </main>
+      <footer class="page-footer">
 
+      </footer>
+    </div>
   </body>
 
 </html>
