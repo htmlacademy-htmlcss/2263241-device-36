@@ -62,7 +62,7 @@ body {
 
 }
 
-.main-container {
+.main-index {
   flex-grow: 1;
 }
 
@@ -224,8 +224,7 @@ body {
 .main-menu-container {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 15px;
-}
+  }
 
 .navigation-menu-list {
   display: flex;
