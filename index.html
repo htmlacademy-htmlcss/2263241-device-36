@@ -40,6 +40,50 @@
                     <span class="user-basket-amount">2</span>
                     Корзина
                   </a>
+                  <div class="popover">
+                    <div class="popover-content">
+                      <h2 class="visually-hidden">Корзина</h2>
+                      <ul class="cart-list">
+                        <li class="cart-item">
+                          <a class="cart-item-link" href="">
+                            <img class="card-image" src="images/product1-small.jpg" alt="Селфи-палка с телефоном."
+                              width="39" height="43">
+                            <p class="cart-item-title">Любительская селфи-палка</p>
+                          </a>
+                          <button type="button" class="cart-item-delete">
+                            <svg class="svg-cart-item-delete" aria-hidden="true" focusable="false" width="10"
+                              height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M10 0.909091L9.09091 0L5 4.09091L0.909091 0L0 0.909091L4.09091 5L0 9.09091L0.909091 10L5 5.90909L9.09091 10L10 9.09091L5.90909 5L10 0.909091Z" />
+                            </svg>
+                            <span class="visually-hidden">Удалить из корзины</span>
+                          </button>
+                        </li>
+                        <li class="cart-item">
+                          <a class="cart-item-link" href="">
+                            <img class="card-image" src="images/product2-small.jpg" alt="Селфи-палка с телефоном."
+                              width="39" height="43">
+                            <p class="cart-item-title">Профессиональная селфи-палка</p>
+                          </a>
+                          <button type="button" class="cart-item-delete">
+                            <svg class="svg-cart-item-delete" aria-hidden="true" focusable="false" width="10"
+                              height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M10 0.909091L9.09091 0L5 4.09091L0.909091 0L0 0.909091L4.09091 5L0 9.09091L0.909091 10L5 5.90909L9.09091 10L10 9.09091L5.90909 5L10 0.909091Z" />
+                            </svg>
+                            <span class="visually-hidden">Удалить из корзины</span>
+                          </button>
+                        </li>
+                      </ul>
+                      <div class="total-container">
+                        <p class="total-items">Товаров:<span class="total-count">2</span> </p>
+                        <p class="total-sum">Сумма: <span class="total-cost">2000</span>&nbsp;₽</p>
+                      </div>
+                      <a class="popover-open-basket" href="">
+                        Открыть корзину
+                      </a>
+                    </div>
+                  </div>
                 </li>
               </ul>
             </div>
@@ -458,6 +502,77 @@
           </div>
         </div>
       </footer>
+      <!-- modal-container-close -->
+      <div class="modal-container modal-container-close">
+        <div class="modal">
+          <section class="modal-content">
+            <h2 class="title modal-title">Доставка под заказ</h2>
+            <button class="modal-close-button">
+              <svg class="close-button-svg" aria-hidden="true" focusable="false" width="26" height="26"
+                viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M26 2.36364L23.6364 0L13 10.6364L2.36364 0L0 2.36364L10.6364 13L0 23.6364L2.36364 26L13 15.3636L23.6364
+                26L26 23.6364L15.3636 13L26 2.36364Z" />
+              </svg>
+              <span class="visually-hidden">Закрыть.</span>
+            </button>
+            <form class="order-form" action="https://echo.htmlacademy.ru/" method="get">
+              <div class="order-form-container">
+                <div class="name-label-container">
+                  <label class="modal-label name-label " for="name-client">Ваше имя:</label>
+                  <input class="name-field modal-field" type="text" id="name-client" name="name-client"
+                    placeholder="Введите имя">
+                  <p class="hint">Добавьте имя</p>
+                </div>
+                <div class="email-label-container">
+                  <label class="modal-label email-label" for="email-client">Ваш e-mail:</label>
+
+                  <input class="email-field modal-field" type="text" id="email-client" name="email-client" value="почта"
+                    placeholder="E-mail">
+                  <p class="hint hint-error">Забавный у вас адрес</p>
+                </div>
+                <div class="goods-label-container">
+                  <label class="modal-label goods-label " for="necessary-goods">Что нужно привезти:</label>
+                  <input class="goods-field modal-field" type="text" id="necessary-goods" name="necessary-goods"
+                    placeholder="В свободной форме">
+                </div>
+                <div class="quantity-container">
+                  <span class="quantity-label-container">
+                    <label class="modal-label quantity-label" for="quantity">Количество:</label>
+                    <span class="tooltip">
+                      <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-quantity"></button>
+                      <span class="tooltip-text" role="tooltip" id="tooltip-label-quantity">Постараемся найти, сколько
+                        нужно. Привезём сколько получится по требованиям
+                        к провозу багажа.</span>
+                    </span>
+                  </span>
+
+                  <div class="quantity-count-container">
+                    <button class="button-count button-count-minus" type="button">
+                      <svg class="count-minus-svg" aria-hidden="true" focusable="false" width="16" height="2"
+                        viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 0H0V2H16V0Z" />
+                      </svg>
+
+                      <span class="visually-hidden">Уменьшить на один.</span>
+                    </button>
+                    <input class="quantity-field modal-field " type="number" id="quantity" name="quantity"
+                      placeholder="0" min="0" value="1">
+                    <button class="button-count button-count-plus" type="button">
+                      <svg class="count-plus-svg" aria-hidden="true" focusable="false" width="16" height="16"
+                        viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 7H9V0H7V7H0V9H7V16H9V9H16V7Z"/>
+                      </svg>
+                      <span class="visually-hidden">Увеличить на один.</span>
+                    </button>
+                  </div>
+                </div>
+                <button class="button send-button" type="submit">Отправить</button>
+              </div>
+            </form>
+          </section>
+
+        </div>
+      </div>
     </div>
   </body>
 
