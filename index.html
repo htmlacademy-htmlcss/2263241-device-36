@@ -14,12 +14,12 @@
         <div class="header-container">
           <a class="page-header-logo">
             <img class="page-header-logo-img" src="images/logo-device-black.svg" width="145" height="36"
-              alt="Логотип Device">
+              alt="Логотип Device.">
           </a>
           <nav class="navigation">
             <div class="user-menu-container">
               <form class="user-search-form" action="https://echo.htmlacademy.ru/" method="get">
-                <label class="visually-hidden" for="user-search">Поиск по сайту</label>
+                <label class="visually-hidden" for="user-search">Поиск по сайту.</label>
 
                 <input class="field-search" type="search" name="user-search" id="user-search"
                   placeholder="Поиск по сайту" required>
@@ -40,6 +40,50 @@
                     <span class="user-basket-amount">2</span>
                     Корзина
                   </a>
+                  <div class="popover">
+                    <div class="popover-content">
+                      <h2 class="visually-hidden">Корзина.</h2>
+                      <ul class="cart-list">
+                        <li class="cart-item">
+                          <a class="cart-item-link" href="">
+                            <img class="card-image" src="images/product1-small.jpg" alt="Селфи-палка с телефоном."
+                              width="39" height="43">
+                            <p class="cart-item-title">Любительская селфи-палка</p>
+                          </a>
+                          <button type="button" class="cart-item-delete">
+                            <svg class="svg-cart-item-delete" aria-hidden="true" focusable="false" width="10"
+                              height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M10 0.909091L9.09091 0L5 4.09091L0.909091 0L0 0.909091L4.09091 5L0 9.09091L0.909091 10L5 5.90909L9.09091 10L10 9.09091L5.90909 5L10 0.909091Z" />
+                            </svg>
+                            <span class="visually-hidden">Удалить из корзины.</span>
+                          </button>
+                        </li>
+                        <li class="cart-item">
+                          <a class="cart-item-link" href="">
+                            <img class="card-image" src="images/product2-small.jpg" alt="Селфи-палка с телефоном."
+                              width="39" height="43">
+                            <p class="cart-item-title">Профессиональная селфи-палка</p>
+                          </a>
+                          <button type="button" class="cart-item-delete">
+                            <svg class="svg-cart-item-delete" aria-hidden="true" focusable="false" width="10"
+                              height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M10 0.909091L9.09091 0L5 4.09091L0.909091 0L0 0.909091L4.09091 5L0 9.09091L0.909091 10L5 5.90909L9.09091 10L10 9.09091L5.90909 5L10 0.909091Z" />
+                            </svg>
+                            <span class="visually-hidden">Удалить из корзины.</span>
+                          </button>
+                        </li>
+                      </ul>
+                      <div class="total-container">
+                        <p class="total-items">Товаров:<span class="total-count">2</span> </p>
+                        <p class="total-sum">Сумма: <span class="total-cost">2000</span>&nbsp;₽</p>
+                      </div>
+                      <a class="popover-open-basket" href="">
+                        Открыть корзину
+                      </a>
+                    </div>
+                  </div>
                 </li>
               </ul>
             </div>
@@ -112,7 +156,7 @@
                 <h3 class="title slider-title"><span class="visually-hidden slider-number">01</span>Порхает как бабочка,
                   жалит
                   как пчела!</h3>
-                <img class="slider-image" src="images/product-quadrocopter.png" alt="Квадрокоптер" width="560"
+                <img class="slider-image" src="images/product-quadrocopter.png" alt="Квадрокоптер." width="560"
                   height="560">
                 <div class="slider-description">
                   <p class="slider-text">Этот обычный, на первый взгляд,
@@ -135,7 +179,7 @@
               <li class="slider-item visually-hidden">
                 <h3 class="title slider-title"><span class="visually-hidden slider-number">02</span>Худеем
                   правильно!</h3>
-                <img class="slider-image" src="images/product-fitnesstracker.png" alt="Фитнесстрекер" width="560"
+                <img class="slider-image" src="images/product-fitnesstracker.png" alt="Фитнесстрекер." width="560"
                   height="560">
                 <div class="slider-description">
                   <p class="slider-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и
@@ -154,7 +198,7 @@
               <li class="slider-item visually-hidden">
                 <h3 class="title slider-title"><span class="visually-hidden slider-number">03</span>Делай селфи,
                   как Бен Стиллер!</h3>
-                <img class="slider-image" src="images/product-selfiestick.png" alt="Селфипалка" width="560"
+                <img class="slider-image" src="images/product-selfiestick.png" alt="Селфипалка." width="560"
                   height="560">
                 <div class="slider-description">
                   <p class="slider-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!)
@@ -183,29 +227,29 @@
             <ul class="slider-button-list">
               <li class="slider-button-item">
                 <button class="slider-button slider-prev" type="button">
-                  <span class="visually-hidden">Предыдущее фото</span>
+                  <span class="visually-hidden">Предыдущее фото.</span>
                 </button>
               </li>
               <li class="slider-button-item">
                 <button class="slider-button slider-next" type="button">
-                  <span class="visually-hidden">Следующее фото</span>
+                  <span class="visually-hidden">Следующее фото.</span>
                 </button>
               </li>
             </ul>
             <ol class="slider-pagination-list">
               <li class="slider-pagination-item">
                 <button class="slider-pagination-button slider-pagination-button-current" type="button">
-                  <span class="visually-hidden">1 товар</span>
+                  <span class="visually-hidden">1 товар.</span>
                 </button>
               </li>
               <li class="slider-pagination-item">
                 <button class="slider-pagination-button" type="button">
-                  <span class="visually-hidden">2 товар</span>
+                  <span class="visually-hidden">2 товар.</span>
                 </button>
               </li>
               <li class="slider-pagination-item">
                 <button class="slider-pagination-button" type="button">
-                  <span class="visually-hidden">3 товар</span>
+                  <span class="visually-hidden">3 товар.</span>
                 </button>
               </li>
             </ol>
@@ -218,7 +262,7 @@
               <a class="categories-link categories-vr" href="#">Виртуальная реальность</a>
             </li>
             <li class="categories-item">
-              <a class="categories-link categories-monopod" href="catalog.html">Моноподы для селфи</a>
+              <a class="categories-link categories-monopod" href="catalog.html">Моноподы для&nbsp;селфи</a>
             </li>
             <li class="categories-item">
               <a class="categories-link categories-camera" href="#">Экшн-камеры</a>
@@ -254,7 +298,7 @@
                 <h3 class="title services-description-title">Доставка</h3>
                 <p class="services-description-text">Мы с удовольствием доставим ваш товар прямо
                   к&nbsp;вашему подъезду совершенно бесплатно! Ведь
-                  мы неплохо заработаем, поднимая его на ваш этаж.</p>
+                  мы&nbsp;неплохо заработаем, поднимая его на ваш этаж.</p>
               </li>
               <li class="services-description-item services-guarantee visually-hidden ">
                 <h3 class="title services-description-title">Гарантия</h3>
@@ -344,14 +388,14 @@
 
           <div class="footer-container">
             <section class="footer-address">
-              <h2 class="visually-hidden">Адрес</h2>
+              <h2 class="visually-hidden">Адрес.</h2>
               <address class="contacts-address">
                 <p class="footer-contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
               </address>
             </section>
 
             <section class="footer-menu">
-              <h2 class="visually-hidden">Меню </h2>
+              <h2 class="visually-hidden">Меню.</h2>
 
               <ul class="footer-menu-list">
                 <li class="footer-menu-item">
@@ -367,7 +411,7 @@
 
             </section>
             <section class="footer-social">
-              <h2 class="visually-hidden">Социальные сети</h2>
+              <h2 class="visually-hidden">Социальные сети.</h2>
               <ul class="social-list">
                 <li class="social-item">
                   <a class="button-social button-social-telegram" href="https://t.me/htmlacademy ">
@@ -378,7 +422,7 @@
                       10.2069L7.10707 8.77358L10.1731 11.0382C10.7384 11.3496 11.1444 11.1896 11.2851 10.5149L13.2977 1.02958C13.5037 0.203583
                       12.9824 -0.170417 12.4431 0.0735832Z" />
                     </svg>
-                    <span class="visually-hidden">Ссылка на Telegram. </span>
+                    <span class="visually-hidden">Ссылка на Telegram.</span>
                   </a>
                 </li>
                 <li class="social-item">
@@ -409,7 +453,7 @@
                       8.55514C1.5 7.75514 0.3 7.05514 0.4 5.05514C0.7 5.35514 1.3 5.55514 1.6 5.45514C1 5.25514 -0.2 2.35514 0.8
                       0.855143C2.4 2.55514 4.1 4.25514 7.1 4.35514C7.3 2.25514 8.1 0.855143 9.7 0.155143Z" />
                     </svg>
-                    <span class="visually-hidden">Ссылка на twitter. </span>
+                    <span class="visually-hidden">Ссылка на twitter.</span>
                   </a>
                 </li>
               </ul>
@@ -417,15 +461,15 @@
 
 
             <section class="footer-phone">
-              <h2 class="visually-hidden">Телефон</h2>
+              <h2 class="visually-hidden">Телефон.</h2>
               <address class="footer-contacts-phone">
-                <a class="footer-contacts-phone-text" href="tel:+78128121212">Тел.:+7 812 812-12-12</a>
+                <a class="footer-contacts-phone-text" href="tel:+78128121212">Тел.:+7(812)812-12-12</a>
               </address>
             </section>
             <section class="footer-copyright">
-              <h2 class="visually-hidden">Разработчик HTMLacademy</h2>
+              <h2 class="visually-hidden">Разработчик HTMLacademy.</h2>
               <a class="copyright-link" href="https://htmlacademy.ru/">
-                <span class="visually-hidden">Ссылка на HTMLacademy</span>
+                <span class="visually-hidden">Ссылка на HTMLacademy.</span>
                 <svg class="svg-copyright" aria-hidden="true" focusable="false" width="115" height="33"
                   viewBox="0 0 115 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0 12.9V15.5H2.5V12.9H0Z" fill="#FFC700" />
@@ -458,6 +502,77 @@
           </div>
         </div>
       </footer>
+      <!-- modal-container-close -->
+      <div class="modal-container modal-container-close">
+        <div class="modal">
+          <section class="modal-content">
+            <h2 class="title modal-title">Доставка под заказ</h2>
+            <button class="modal-close-button">
+              <svg class="close-button-svg" aria-hidden="true" focusable="false" width="26" height="26"
+                viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M26 2.36364L23.6364 0L13 10.6364L2.36364 0L0 2.36364L10.6364 13L0 23.6364L2.36364 26L13 15.3636L23.6364
+                26L26 23.6364L15.3636 13L26 2.36364Z" />
+              </svg>
+              <span class="visually-hidden">Закрыть.</span>
+            </button>
+            <form class="order-form" action="https://echo.htmlacademy.ru/" method="get">
+              <div class="order-form-container">
+                <div class="name-label-container">
+                  <label class="modal-label name-label " for="name-client">Ваше имя:</label>
+                  <input class="name-field modal-field" type="text" id="name-client" name="name-client"
+                    placeholder="Введите имя">
+                  <p class="hint">Добавьте имя</p>
+                </div>
+                <div class="email-label-container">
+                  <label class="modal-label email-label" for="email-client">Ваш e-mail:</label>
+
+                  <input class="email-field modal-field" type="text" id="email-client" name="email-client" value="почта"
+                    placeholder="E-mail">
+                  <p class="hint hint-error">Забавный у вас адрес</p>
+                </div>
+                <div class="goods-label-container">
+                  <label class="modal-label goods-label " for="necessary-goods">Что нужно привезти:</label>
+                  <input class="goods-field modal-field" type="text" id="necessary-goods" name="necessary-goods"
+                    placeholder="В свободной форме">
+                </div>
+                <div class="quantity-container">
+                  <span class="quantity-label-container">
+                    <label class="modal-label quantity-label" for="quantity">Количество:</label>
+                    <span class="tooltip">
+                      <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-quantity"></button>
+                      <span class="tooltip-text" role="tooltip" id="tooltip-label-quantity">Постараемся найти, сколько
+                        нужно. Привезём сколько получится по требованиям
+                        к провозу багажа.</span>
+                    </span>
+                  </span>
+
+                  <div class="quantity-count-container">
+                    <button class="button-count button-count-minus" type="button">
+                      <svg class="count-minus-svg" aria-hidden="true" focusable="false" width="16" height="2"
+                        viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 0H0V2H16V0Z" />
+                      </svg>
+
+                      <span class="visually-hidden">Уменьшить на один.</span>
+                    </button>
+                    <input class="quantity-field modal-field " type="number" id="quantity" name="quantity"
+                      placeholder="0" min="0" value="1">
+                    <button class="button-count button-count-plus" type="button">
+                      <svg class="count-plus-svg" aria-hidden="true" focusable="false" width="16" height="16"
+                        viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 7H9V0H7V7H0V9H7V16H9V9H16V7Z"/>
+                      </svg>
+                      <span class="visually-hidden">Увеличить на один.</span>
+                    </button>
+                  </div>
+                </div>
+                <button class="button send-button" type="submit">Отправить</button>
+              </div>
+            </form>
+          </section>
+
+        </div>
+      </div>
     </div>
   </body>
 
